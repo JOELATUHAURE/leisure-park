@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X, Phone, MessageCircle, Star, MapPin, ChevronRight, Calendar } from 'lucide-react';
+import leisureImage from './images/leisure.jpg';
 
 // Components
 const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => (
@@ -98,24 +99,24 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section 
-        className="pt-24 pb-12 md:pt-32 md:pb-24 bg-cover bg-center" 
-        style={{
-          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80")'
-        }}
-      >
-        <div className="container mx-auto px-4 text-center text-white">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Welcome to Leisure Park International Hotel
-          </h1>
-          <p className="text-xl md:text-2xl mb-8">
-            Affordable Comfort & Convenience in Mbarara
-          </p>
-          <button className="bg-primary text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-primary/90 transition-colors">
-            Book Now
-          </button>
-        </div>
-      </section>
+     <section 
+  className="pt-24 pb-12 md:pt-32 md:pb-24 bg-cover bg-center" 
+  style={{
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${leisureImage})`
+  }}
+>
+  <div className="container mx-auto px-4 text-center text-white">
+    <h1 className="text-4xl md:text-6xl font-bold mb-6">
+      Welcome to Leisure Park International Hotel
+    </h1>
+    <p className="text-xl md:text-2xl mb-8">
+      Affordable Comfort & Convenience in Mbarara
+    </p>
+    <button className="bg-primary text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-primary/90 transition-colors">
+      Book Now
+    </button>
+  </div>
+</section>
 
       {/* About Section */}
       <section id="about" className="py-16 bg-white">
